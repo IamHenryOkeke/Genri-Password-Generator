@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Password Generator</title>
+    <!-- link to google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+<body>
+    <header>
+        <h1>Password Generator</h1>
+            </header>
+    <div class="desription">
+        <h2 class="header">Generate a secure password</h2>
+        <p>A strong password provides good security from hackers and prevent unauthorized access to your electronic accounts and devices.</p>
+        <p class="description">Create a secure, strong and random password with our free password generator</p>
+
+    </div>
+    <section class="container">
+        <p class="container-para">Move the slider to set how many characters you want for each type of character</p>
+        <div class="slider-container">
+            <div class="slidecontainer">
+                <h4>Uppercase</h4>
+                <input type="range" min="1" max="10" value="5" class="slider" id="uppercaseRange">
+                <p>Value: <span id="uppercaseValue"></span></p>
+            </div>
+            <div class="slidecontainer">
+                <h4>Lowercase</h4>
+                <input type="range" min="1" max="10" value="5" class="slider" id="lowercaseRange">
+                <p>Value: <span id="lowercaseValue"></span></p>
+            </div>
+            <div class="slidecontainer">
+                <h4>Number</h4>
+                <input type="range" min="1" max="10" value="5" class="slider" id="numberRange">
+                <p>Value: <span id="numberValue"></span></p>
+            </div>
+            <div class="slidecontainer">
+                <h4>Symbols</h4>
+                <input type="range" min="1" max="10" value="5" class="slider" id="symbolRange">
+                <p>Value: <span id="symbolValue"></span></p>
+            </div>
+        </div>
+        <div class="password">
+            <p id="password"></p>
+        </div>
+        <div class="button-container">
+            <button id="generate-password">
+                Generate Password
+            </button>
+            <button id="copy-button">Copy Password</button>
+        </div>
+    </section>
+    <footer>Copyright &copy; 2022  
+        <i class="fa fa-github" style="font-size:24px"></i>
+        <a href="https://github.com/IamHenryOkeke/Password-Generator-For-Web/" target="_blank">Henry Nmesomachukwu</a>
+    </footer>
+    <script src="./scripts/scripts.js">
+
+    </script>
+</body>
+</html>
