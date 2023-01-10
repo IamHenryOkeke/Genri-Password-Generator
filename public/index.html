@@ -9,8 +9,10 @@
     <!-- link to google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&display=swap"
       rel="stylesheet"
     />
     <!-- font awesome link -->
@@ -18,106 +20,113 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./styles/output.css">
+    <link rel="stylesheet" href="./output.css" />
   </head>
-  <body>
-    <h1 class="bg-red-500 text-3xl font-bold underline">HELLO</h1>
-    <!-- <header class="header">
+  <body class="font-body">
+    <header class="flex px-32 py-10 justify-between items-center">
       <div class="logo-container">
         <img src="./images/Logo.png" alt="" />
       </div>
       <nav class="navbar">
-        <ul class="navbar-ul">
-          <li class="navbar-item"><a href="">Home</a></li>
-          <li class="navbar-item"><a href="">Recents</a></li>
-          <li class="navbar-item"><a href="">Saved Password</a></li>
-          <li class="navbar-item"><a href="">Contact Us</a></li>
+        <ul class="flex gap-10 text-xl">
+          <li class="navbar-item "><a class="transition ease-in-out delay-300 hover:border-b-4 hover:border-indigo-950 duration-300" href="">Home</a></li>
+          <li class="navbar-item "><a class="transition ease-in-out delay-300 hover:border-b-4 hover:border-indigo-950 duration-300" href="">Recents</a></li>
+          <li class="navbar-item "><a class="transition ease-in-out delay-300 hover:border-b-4 hover:border-indigo-950 duration-300" href="">Saved Password</a></li>
+          <li class="navbar-item "><a class="transition ease-in-out delay-300 hover:border-b-4 hover:border-indigo-950 duration-300" href="">Contact Us</a></li>
         </ul>
       </nav>
     </header>
-    <div class="hero-section">
-      <div class="hero-section-text">
-        <h1>Generate the hard-to-get and easy-to-remember password</h1>
-        <p>
+    <div class="px-[118px] flex items-center">
+      <div class="flex w-[490px] flex-col gap-2 items-start">
+        <h1 class="text-[40px] leading-[56px] font-semibold">
+          Generate the hard-to-get and easy-to-remember password
+        </h1>
+        <p class="text-xl font-medium leading-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
           molestias cumque voluptatibus porro quod at dignissimos, temporibus,
           iusto officia ullam nemo voluptates corrupti recusandae obcaecati ab
           sequi et quia hic!
         </p>
-        <button>Generate</button>
+        <button
+          class="font-medium text-sm px-8 py-2 bg-indigo-950 rounded-md text-white"
+        >
+          Generate
+        </button>
       </div>
-      <div class="hero-section-image">
-        <img src="./images/Hero_Image.png" alt="" />
+      <div class="w-1/2 mx-auto">
+        <img class="w-full mx-auto" src="./images/Hero_Image.png" alt="" />
       </div>
     </div>
-    <div class="input-generate-section">
-      <section class="input-section">
-        <div class="uppercase-container">
+    <div class="border-indigo-950 border-b-8 py-20">
+      <section
+        class="px-36 py-6 grid grid-cols-2 gap-5 bg-indigo-950 justify-between text-4xl mb-5"
+      >
+        <div class="uppercase-container pl-14 py-4 bg-indigo-1000 rounded-2xl">
           <h4>Uppercase(A-Z)</h4>
-          <div>
+          <div class="flex items-center gap-5">
             <input
               type="range"
               min="1"
               max="10"
               value="5"
-              class="slider"
+              class="w-3/4 cursor-pointer"
               id="uppercaseRange"
             />
-            <p><span id="uppercaseValue"></span></p>
+            <p class="rounded-md w-[40px] h-[40px] border-4 border-indigo-950 bg-neutral-1000"><span id="uppercaseValue"></span></p>
           </div>
         </div>
-        <div class="lowercase-container">
+        <div class="lowercase-container pl-14 py-4 bg-indigo-1000 rounded-2xl">
           <h4>Lowercase(a-z)</h4>
-          <div>
+          <div class="flex items-center gap-5">
             <input
               type="range"
               min="1"
               max="10"
               value="5"
-              class="slider"
+              class="w-3/4 cursor-pointer"
               id="lowercaseRange"
             />
-            <p><span id="lowercaseValue"></span></p>
+            <p class="rounded-md w-[40px] h-[40px] border-4 border-indigo-950 bg-neutral-1000"><span id="lowercaseValue"></span></p>
           </div>
         </div>
-        <div class="number-container">
+        <div class="number-container pl-14 py-4 bg-indigo-1000 rounded-2xl">
           <h4>Number(0-9)</h4>
-          <div>
+          <div class="flex items-center gap-5">
             <input
               type="range"
               min="1"
               max="10"
               value="5"
-              class="slider"
+              class="w-3/4 cursor-pointer"
               id="numberRange"
             />
-            <p><span id="numberValue"></span></p>
+            <p class="rounded-md w-[40px] h-[40px] border-4 border-indigo-950 bg-neutral-1000"><span id="numberValue"></span></p>
           </div>
         </div>
-        <div class="symbols-container">
+        <div class="symbols-container pl-14 py-4 bg-indigo-1000 rounded-2xl">
           <h4>Symbols(-@_)</h4>
-          <div>
+          <div class="flex items-center gap-5">
             <input
               type="range"
               min="1"
               max="10"
               value="5"
-              class="slider"
+              class="w-3/4 cursor-pointer"
               id="symbolRange"
             />
-            <p><span id="symbolValue"></span></p>
+            <p class="rounded-md w-[40px] h-[40px] border-4 border-indigo-950 bg-neutral-1000"><span id="symbolValue"></span></p>
           </div>
         </div>
       </section>
-      <section class="generate-section">
-        <div class="password-length-container">
-          <p>Password Length</p>
-          <p id="show-length" class="show-length"></p>
+      <section class="flex flex-col items-center justify-center gap-5">
+        <div class="flex flex-col items-center">
+          <p>Password Length: </p>
+          <p id="show-length" class="rounded-xl w-[150px] h-[60px] border-2 border-indigo-950"></p>
         </div>
-        <button id="generate-btn" class="generate-btn">Generate</button>
-        <div class="display-password">
-          <p id="password" class="password"></p>
-          <button id="copy-button" class="copy-button">
+        <button id="generate-btn" class="font-medium text-4xl px-20 py-2 bg-indigo-950 rounded-md">Generate</button>
+        <div class="flex gap-6 items-center">
+          <p id="password" class="rounded-xl w-[400px] h-[80px] border-2 border-indigo-950"></p>
+          <button id="copy-button" class="flex gap-1 items-center rounded-md bg-indigo-950 px-4 py-2">
             <svg
               width="13"
               height="12"
@@ -135,8 +144,8 @@
         </div>
       </section>
     </div>
-    <div class="description">
-      <div class="genri">
+    <div class="px-36 pt-7 grid grid-cols-2 gap-5">
+      <div class="pr-8 text-lg">
         <div class="genri-logo">
           <img src="./images/Logo.png" alt="" />
         </div>
@@ -147,18 +156,26 @@
           optio fugit ullam!
         </p>
       </div>
-      <div class="about">
-        <p class="short-links">short links</p>
+      <div class="w-full">
+        <p class="short-links mb-3">short links</p>
         <div>
-          <ul class="about-links">
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Our Team</a></li>
-            <li><a href="">Contact Us</a></li>
+          <ul class="text-2xl">
+            <li class="border-b-4 border-neutral-950">
+              <a class="text-indigo-950 pb-1" href="">Home</a>
+            </li>
+            <li class="border-b-4 border-neutral-950">
+              <a class="text-indigo-950 pb-1" href="">About Us</a>
+            </li>
+            <li class="border-b-4 border-neutral-950">
+              <a class="text-indigo-950 pb-1" href="">Our Team</a>
+            </li>
+            <li class="border-b-4 border-neutral-950">
+              <a class="text-indigo-950 pb-1" href="">Contact Us</a>
+            </li>
           </ul>
         </div>
       </div>
-    </div> -->
+    </div>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
