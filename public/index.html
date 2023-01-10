@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Genri Password Web App</title>
+    <!-- link to google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/output.css">
+  </head>
+  <body>
+    <h1 class="bg-red-500 text-3xl font-bold underline">HELLO</h1>
+    <!-- <header class="header">
+      <div class="logo-container">
+        <img src="./images/Logo.png" alt="" />
+      </div>
+      <nav class="navbar">
+        <ul class="navbar-ul">
+          <li class="navbar-item"><a href="">Home</a></li>
+          <li class="navbar-item"><a href="">Recents</a></li>
+          <li class="navbar-item"><a href="">Saved Password</a></li>
+          <li class="navbar-item"><a href="">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="hero-section">
+      <div class="hero-section-text">
+        <h1>Generate the hard-to-get and easy-to-remember password</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+          molestias cumque voluptatibus porro quod at dignissimos, temporibus,
+          iusto officia ullam nemo voluptates corrupti recusandae obcaecati ab
+          sequi et quia hic!
+        </p>
+        <button>Generate</button>
+      </div>
+      <div class="hero-section-image">
+        <img src="./images/Hero_Image.png" alt="" />
+      </div>
+    </div>
+    <div class="input-generate-section">
+      <section class="input-section">
+        <div class="uppercase-container">
+          <h4>Uppercase(A-Z)</h4>
+          <div>
+            <input
+              type="range"
+              min="1"
+              max="10"
+              value="5"
+              class="slider"
+              id="uppercaseRange"
+            />
+            <p><span id="uppercaseValue"></span></p>
+          </div>
+        </div>
+        <div class="lowercase-container">
+          <h4>Lowercase(a-z)</h4>
+          <div>
+            <input
+              type="range"
+              min="1"
+              max="10"
+              value="5"
+              class="slider"
+              id="lowercaseRange"
+            />
+            <p><span id="lowercaseValue"></span></p>
+          </div>
+        </div>
+        <div class="number-container">
+          <h4>Number(0-9)</h4>
+          <div>
+            <input
+              type="range"
+              min="1"
+              max="10"
+              value="5"
+              class="slider"
+              id="numberRange"
+            />
+            <p><span id="numberValue"></span></p>
+          </div>
+        </div>
+        <div class="symbols-container">
+          <h4>Symbols(-@_)</h4>
+          <div>
+            <input
+              type="range"
+              min="1"
+              max="10"
+              value="5"
+              class="slider"
+              id="symbolRange"
+            />
+            <p><span id="symbolValue"></span></p>
+          </div>
+        </div>
+      </section>
+      <section class="generate-section">
+        <div class="password-length-container">
+          <p>Password Length</p>
+          <p id="show-length" class="show-length"></p>
+        </div>
+        <button id="generate-btn" class="generate-btn">Generate</button>
+        <div class="display-password">
+          <p id="password" class="password"></p>
+          <button id="copy-button" class="copy-button">
+            <svg
+              width="13"
+              height="12"
+              viewBox="0 0 13 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.25361 11.9083C1.89571 11.9083 1.58922 11.8015 1.33413 11.5879C1.07948 11.3739 0.952148 11.1168 0.952148 10.8165V3.17405H2.25361V10.8165H9.41168V11.9083H2.25361ZM4.85655 9.72475C4.49864 9.72475 4.19237 9.61793 3.93771 9.40431C3.68263 9.19032 3.55508 8.9332 3.55508 8.63296V2.08226C3.55508 1.78202 3.68263 1.52491 3.93771 1.31092C4.19237 1.09729 4.49864 0.990479 4.85655 0.990479H10.7131C11.0711 0.990479 11.3775 1.09729 11.6326 1.31092C11.8873 1.52491 12.0146 1.78202 12.0146 2.08226V8.63296C12.0146 8.9332 11.8873 9.19032 11.6326 9.40431C11.3775 9.61793 11.0711 9.72475 10.7131 9.72475H4.85655ZM4.85655 8.63296H10.7131V2.08226H4.85655V8.63296ZM4.85655 8.63296V2.08226V8.63296Z"
+                fill="white"
+              />
+            </svg>
+            <p>Copy</p>
+          </button>
+        </div>
+      </section>
+    </div>
+    <div class="description">
+      <div class="genri">
+        <div class="genri-logo">
+          <img src="./images/Logo.png" alt="" />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+          consequatur sequi aut minima accusantium, quos a nesciunt vel
+          voluptatum velit dolorem quia delectus sint earum voluptates excepturi
+          optio fugit ullam!
+        </p>
+      </div>
+      <div class="about">
+        <p class="short-links">short links</p>
+        <div>
+          <ul class="about-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Our Team</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
