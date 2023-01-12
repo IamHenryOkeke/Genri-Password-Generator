@@ -31,18 +31,23 @@
     ></script>
   </head>
   <body class="font-body">
-    <nav class="flex flex-col md:flex-row px-8 md:px-32 pt-10 justify-between items-center">
+    <nav
+      class="flex flex-col md:flex-row px-8 md:px-32 pt-10 justify-between items-center"
+    >
       <div class="logo-container flex justify-between w-full md:w-1/2">
         <a href="http://" target="_blank"
           ><img src="./public/images/Logo.png" alt=""
         /></a>
         <span class="block text-3xl cursor-pointer md:hidden"
-          ><ion-icon id="icon" name="menu-outline" onclick="Menu(this)"></ion-icon
+          ><ion-icon
+            id="icon"
+            name="menu-outline"
+          ></ion-icon
         ></span>
       </div>
 
       <ul
-        class="rounded-xl mt-8 bg-indigo-1000 hidden flex-col items-center gap-5 md:flex md:flex-row md:gap-10 md:items-center w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 transition-all ease-in duration-500"
+        class="rounded-xl mt-8 md:mt-0 bg-indigo-1000 md:bg-white md:rounded-none hidden flex-col items-center gap-5 md:flex md:flex-row md:gap-10 md:items-center w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 transition-all ease-in duration-500"
       >
         <li class="navbar-item">
           <a
@@ -140,9 +145,9 @@
               id="uppercaseRange"
             />
             <p
-              class="rounded-md w-[40px] h-[40px] border-4 border-indigo-950 bg-neutral-1000"
+              class="flex items-center justify-center rounded-md w-[40px] h-[40px] border-4 border-indigo-950 bg-neutral-1000"
             >
-              <span id="uppercaseValue"></span>
+              <span id="uppercaseValue" class="md:text-3xl"></span>
             </p>
           </div>
         </div>
@@ -160,9 +165,9 @@
               id="lowercaseRange"
             />
             <p
-              class="rounded-md w-[40px] h-[40px] border-4 border-indigo-950 bg-neutral-1000"
+              class="flex items-center justify-center rounded-md w-[40px] h-[40px] border-4 border-indigo-950 bg-neutral-1000"
             >
-              <span id="lowercaseValue"></span>
+              <span id="lowercaseValue" class="md:text-3xl"></span>
             </p>
           </div>
         </div>
@@ -180,9 +185,9 @@
               id="numberRange"
             />
             <p
-              class="rounded-md w-[40px] h-[40px] border-4 border-indigo-950 bg-neutral-1000"
+              class="flex items-center justify-center rounded-md w-[40px] h-[40px] border-4 border-indigo-950 bg-neutral-1000"
             >
-              <span id="numberValue"></span>
+              <span id="numberValue" class="md:text-3xl"></span>
             </p>
           </div>
         </div>
@@ -200,9 +205,9 @@
               id="symbolRange"
             />
             <p
-              class="rounded-md w-[40px] h-[40px] border-4 border-indigo-950 bg-neutral-1000"
+              class="flex items-center justify-center rounded-md w-[40px] h-[40px] border-4 border-indigo-950 bg-neutral-1000"
             >
-              <span id="symbolValue"></span>
+              <span id="symbolValue" class="md:text-3xl"></span>
             </p>
           </div>
         </div>
@@ -212,19 +217,19 @@
           <p>Password Length:</p>
           <p
             id="show-length"
-            class="w-16 h-12 rounded-xl md:w-[150px] md:h-[60px] border-2 border-indigo-950"
+            class="flex items-center justify-center text-base md:text-4xl w-16 h-12 rounded-xl md:w-[150px] md:h-[60px] border-2 border-indigo-950"
           ></p>
         </div>
         <button
-          id="generate-btn"
+          id="generate-password"
           class="px-10 md:font-medium md:text-4xl md:px-20 py-2 bg-indigo-950 rounded-md hover:bg-indigo-1000"
         >
           Generate
         </button>
-        <div class="flex gap-2 items-center">
+        <div class="flex flex-col md:flex-row gap-2 items-center">
           <p
             id="password"
-            class="w-[200px] h-[40px] rounded-xl md:w-[400px] md:h-[80px] border-2 border-indigo-950"
+            class="px-3 text-sm md:text-base text-ellipsis text-center flex items-center justify-center w-[300px] h-[40px] rounded-xl md:w-[400px] md:h-[80px] border-2 border-indigo-950"
           ></p>
           <button
             id="copy-button"
@@ -252,7 +257,7 @@
         <div class="genri-logo text-base">
           <img src="./public/images/Logo.png" alt="" />
         </div>
-        <p class="text-[9px] md:text-base">
+        <p class="text-[10px] md:text-base">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
           consequatur sequi aut minima accusantium, quos a nesciunt vel
           voluptatum velit dolorem quia delectus sint earum voluptates excepturi
@@ -305,7 +310,6 @@
         >.
       </p>
     </footer>
-    <script src="./public/scripts/index.js">
-    </script>
+    <script src="./public/scripts/index.js"></script>
   </body>
 </html>
