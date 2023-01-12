@@ -40,45 +40,29 @@ sliderSymbol.oninput = function () {
 
 function generateUppercase() {
     let charNumUppercase = outputUppercase.innerText;
-    let randNumber;
-    let uppercaseLetter;
     for (let i = 0; i < charNumUppercase; i++) {
-        randNumber = Math.floor((Math.random() * upperCaseLetters.length))
-        uppercaseLetter = upperCaseLetters[randNumber]
-        passwordArray.push(uppercaseLetter)
+        passwordArray.push(upperCaseLetters[Math.floor((Math.random() * upperCaseLetters.length))])
     }
 }
 
 function generateLowercase() {
     let charNumLowercase = outputLowercase.innerText;
-    let randNumber;
-    let lowercaseLetter;
     for (let i = 0; i < charNumLowercase; i++) {
-        randNumber = Math.floor((Math.random() * lowerCaseLetters.length))
-        lowercaseLetter = lowerCaseLetters[randNumber]
-        passwordArray.push(lowercaseLetter)
+        passwordArray.push(lowerCaseLetters[Math.floor((Math.random() * lowerCaseLetters.length))])
     }
 }
 
 function generateNumber() {
     let charNumber = outputNumber.innerText;
-    let randNumber;
-    let number;
     for (let i = 0; i < charNumber; i++) {
-        randNumber = Math.floor((Math.random() * numbers.length))
-        number = numbers[randNumber]
-        passwordArray.push(number)
+        passwordArray.push(numbers[Math.floor((Math.random() * numbers.length))])
     }
 }
 
 function generateSymbol() {
     let charNumSymbol = outputSymbol.innerText;
-    let randNumber;
-    let symbol;
     for (let i = 0; i < charNumSymbol; i++) {
-        randNumber = Math.floor((Math.random() * symbols.length));
-        symbol = symbols[randNumber]
-        passwordArray.push(symbol)
+        passwordArray.push(symbols[Math.floor((Math.random() * symbols.length))])
     }
 }
 
@@ -88,7 +72,6 @@ function shuffle(array) {
         [array[i], array[j]] = [array[j], array[i]];
     }
 }
-
 
 function copyPassword() {
     let copyText = document.getElementById("password");
@@ -142,6 +125,5 @@ button.addEventListener("click", () => {
 copy.addEventListener("click", () => {
     copyPassword()
 })
-
 
 iconToggleBtn.addEventListener("click", menu)
