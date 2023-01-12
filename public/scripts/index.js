@@ -111,3 +111,14 @@
 // copy.addEventListener("click", () => {
 //     copyPassword()
 // })
+
+const iconToggleBtn = document.getElementById("icon")
+function Menu(e) {
+    let list = document.querySelector("ul");
+    e.name === "menu-outline"
+        ? ((e.name = "close-outline"),
+            list.classList.replace("hidden", "flex"))
+        : ((e.name = "menu-outline"),
+            list.classList.replace("flex", "hidden"));
+}
+iconToggleBtn.addEventListener("click", Menu())
